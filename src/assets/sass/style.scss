@@ -1,0 +1,77 @@
+
+@font-face {
+    font-family: 'i-black';
+    src: url('../fonts/Inter-Black.ttf');
+}
+@font-face {
+    font-family: 'i-bold';
+    src: url('../fonts/Inter-Bold.ttf');
+}
+@font-face {
+    font-family: 'i-m';
+    src: url('../fonts/Inter-Medium.ttf');
+}
+@font-face {
+    font-family: 'i-r';
+    src: url('../fonts/Inter-Regular.ttf');
+}
+body, * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'i-r', 'sans-serif';
+}
+html {
+    scroll-behavior: smooth;
+}
+button:focus, *:focus {
+    outline: none;
+}
+$white: #fff;
+$bgwhite: #E5E5E5;
+$black: #000;
+$purple: #800A7A;
+$yellow: #F1B301;
+$grey: #222124;
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.container {
+    max-width: 1110px;
+    margin: auto;
+}
+@mixin bg {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.bg {
+    position: relative;
+    max-width: 100vw;
+    overflow: hidden;
+    margin: 0 auto;
+    
+}
+.hammasi, .hidecard {
+    display: none;
+}
+@import 'blocks/flex';
+@import 'blocks/header';
+@import 'blocks/mixin';
+@import 'blocks/head';
+@import 'blocks/filtr';
+@import 'blocks/ilova';
+@import 'blocks/footer';
+@import 'blocks/media';
+@import 'blocks/menumodal';
+@import 'blocks/modal';

@@ -1,0 +1,98 @@
+.head {
+    margin-top: 30px;
+    height: 100%;
+    &__content {
+        .title{
+            font-family: 'i-black';
+            font-size: 70px;
+            line-height: 78px;
+            color: $black;
+            width: 515px;
+            margin-bottom: 10px;
+        }
+        .text {
+            font-size: 18px;
+            line-height: 32px;
+            width: 75%;
+            margin-bottom: 36px;
+        }
+    }
+    &__img {
+        width: 100%;
+        img {
+            position: absolute;
+            width: 100%;
+            top: 87px;
+            left: 20px;
+            transform: scale(1.5);
+        }
+    }
+    .col-6 {
+        flex-basis: 50%;
+        width: 50%;
+        max-width: 50%;
+        position: relative;
+    }
+    .box-img {
+        position: relative;
+        .title {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 11px 23px;
+            background-color:rgba($color: #fff, $alpha:0.2);
+            border-radius: 27px;
+            font-family: 'i-m';
+            font-size: 16px;
+            color: $white;
+            cursor: pointer;
+            img {
+                margin-right: 11px;
+            }
+        }
+        .name, .name-end, .name-end2, .name2 {
+            position: absolute;
+            bottom: 50px;
+            left: 20px;
+            width: 80px;
+            font-size: 34px;
+            line-height: 32px;
+            color: #E76A06;
+            font-family: 'i-bold';
+        }
+        .name-end{
+            left: 30px;
+            bottom: 20px;
+        }
+        .name-end2 {
+            bottom: 20px;
+            left: 10px;
+        }
+        .name2, .name-end2 {
+            color: #FC96F7;
+        }
+    }
+}
+.top {
+    position: fixed;
+    top: 50px;
+    right: -50px;
+    z-index: 5;
+    text-shadow: 10px 10px 10px #F1B307;
+    animation: 1s ease infinite;
+    transition: 0.5s;
+}
+.top.active {
+    right: 50px;
+    animation-name: focus;
+}
+@keyframes focus {
+    0%, 50%, 100% {
+        transform: scale(1);
+    }
+    25%, 75% {
+        transform: scale(1.4);
+    }
+}

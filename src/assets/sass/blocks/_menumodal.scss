@@ -1,0 +1,38 @@
+.menumodal{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80vw;
+    height: 100vh;
+    background-color: #fff;
+    color: #000;
+    z-index: 3;
+    padding: 30px;
+    transition: .5s;
+    &.active {
+        right: 0;
+    }
+    .exit {
+        position: absolute;
+        top: 30px;
+        right: 10px;
+        svg {
+            transform: rotate(45deg);
+        }
+    }
+    .menu {
+        display: flex;
+        flex-direction: column;
+        a {
+            color: #000;
+            margin-bottom: 30px;
+        }
+        .tel__phone, .korzina {
+            display: flex;
+            align-items: center;
+            svg {
+                margin-right: 10px;
+            }
+        }
+    }
+}

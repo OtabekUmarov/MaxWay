@@ -1,0 +1,55 @@
+.ilova {
+    .container{
+        position: relative;
+       
+    }
+    width: 100%;
+    padding: 75px 0;
+    background-color: $purple;
+    &__title {
+        font-family: 'i-bold';
+        font-size: 52px;
+        color: white;
+        margin-bottom: 60px;
+    }
+    &__btn {
+        display: flex;
+        button {
+            background-color: unset;
+            border: unset;
+            display: flex;
+            align-items: center;
+            margin-right: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.292941);
+            backdrop-filter: blur(27.1828px);
+            border-radius: 46px;
+            padding: 10px 30px;
+            cursor: pointer;
+            transition: .3s;
+            &:hover {
+                background-color: $yellow;
+            }
+            svg {
+                margin-right: 20px;
+            }
+            a {
+                color:white;
+            }
+        }
+    }
+}
+.bg-ilova {
+    padding-top: 70px;
+    overflow: hidden;
+    .phone-img {
+        position: absolute;
+        top: -219px;
+        right: -140px;
+        z-index: 1;
+    }
+    .qalampir-img{
+        position: absolute;
+        top: 0;
+        right: -120px;    
+    }
+}

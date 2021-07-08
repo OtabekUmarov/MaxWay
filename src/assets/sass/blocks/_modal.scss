@@ -1,0 +1,73 @@
+.modal {
+    position: fixed;
+    top: -120%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+    background-color: rgba($color: #000000, $alpha: 0.8);
+    z-index: 10;
+    &.show {
+        top: 0;
+    }
+    &__box {
+        text-align: center;
+        padding: 50px;
+        border-radius: 20px;
+        background-color: $purple;
+        position: relative;
+    }
+    &__title {
+        font-size: 36px;
+        color: #fff;
+        .soni, .summasi, .som {
+            color: $yellow;
+        }
+        .soniBox, .summasiBox {
+            margin: 10px 0;
+        }
+    }
+    &__kuryer {
+        color: #fff;
+        margin: 10px 0;
+        margin-bottom: 30px;
+        font-size: 24px;
+        a {
+            color: $yellow;
+        }
+    }
+    .exit-div {
+        display: inline-block;
+        background-color: #fff;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%) rotate(-45deg);
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    &__exit {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $yellow;
+        width: 3px;
+        height: 40px;
+        transform: translate(28px, 10px);
+        &:after {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: rotate(90deg);
+            width: 3px;
+            height: 40px;
+            background-color: $yellow;
+        }
+    }
+}
